@@ -383,6 +383,9 @@ typical word processor."
      (sql . nil)
      (sqlite . t))))
 
+(after-load 'org
+  (setq org-startup-indented t)
+  (add-hook 'org-mode-hook 'org-indent-mode))
 
 (provide 'init-org)
 ;;; init-org.el ends here
