@@ -128,10 +128,13 @@
 
 (require 'init-folding)
 (require 'init-dash)
-
-;;(require 'init-twitter)
-;; (require 'init-mu)
 (require 'init-ledger)
+
+;; custom imports
+(require 'init-typescript)
+(require 'init-neotree)
+(require 'init-personal-keybindings)
+
 ;; Extra packages which don't require any configuration
 
 (require-package 'gnuplot)
