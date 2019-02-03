@@ -31,8 +31,16 @@ Doesn't mess with special buffers."
 (global-set-key (kbd "s-a") 'beginning-of-line)
 
 
+;;;;;;;;;;;;;;;;;;;;;;;
+;; buffer management ;;
+;;;;;;;;;;;;;;;;;;;;;;;
 (global-set-key (kbd "C-c k") #'kill-other-buffers)
 (global-set-key (kbd "C-x k") 'custom/kill-this-buffer)
+
+;;;;;;;;;;;;
+;; search ;;
+;;;;;;;;;;;;
+(global-set-key (kbd "C-s") 'sanityinc/swiper-at-point)
 
 (provide 'init-personal-keybindings)
 ;;; init-personal-keybindings.el ends here
