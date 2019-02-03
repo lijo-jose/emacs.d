@@ -384,7 +384,10 @@ typical word processor."
      (sqlite . t))))
 
 (after-load 'org
-  (setq org-startup-indented t)
+  (setq org-startup-indented t
+        org-src-fontify-natively t
+        org-src-tab-acts-natively t)
+
   (add-hook 'org-mode-hook 'org-indent-mode))
 
 (provide 'init-org)

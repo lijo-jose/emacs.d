@@ -2,6 +2,23 @@
 ;;; Commentary:
 ;;; Code:
 
+(maybe-require-package 'dash)
+
+(defun kill-other-buffers ()
+  "Kill all buffers but the current one.
+Doesn't mess with special buffers."
+  (interactive)
+  (-each
+      (->> (buffer-list)
+           (-filter #'buffer-file-name)
+           (--remove (eql (current-buffer) it)))
+    #'kill-buffer))
+
+(defun custom/kill-this-buffer ()
+  "Kill the current buffer."
+  (interactive)
+  (kill-buffer (current-buffer)))
+
 ;;;;;;;;;;;;;;;;
 ;; navigation ;;
 ;;;;;;;;;;;;;;;;
@@ -13,18 +30,9 @@
 (global-set-key (kbd "s-e") 'end-of-line)
 (global-set-key (kbd "s-a") 'beginning-of-line)
 
-(when (maybe-require-package 'dash)
-  (defun kill-other-buffers ()
-    "Kill all buffers but the current one.
-Doesn't mess with special buffers."
-    (interactive)
-    (-each
-        (->> (buffer-list)
-             (-filter #'buffer-file-name)
-             (--remove (eql (current-buffer) it)))
-      #'kill-buffer))
 
-  (global-set-key (kbd "C-c k") #'kill-other-buffers))
+(global-set-key (kbd "C-c k") #'kill-other-buffers)
+(global-set-key (kbd "C-x k") 'custom/kill-this-buffer)
 
 (provide 'init-personal-keybindings)
 ;;; init-personal-keybindings.el ends here
