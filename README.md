@@ -1,5 +1,4 @@
-[![Build Status](https://travis-ci.org/purcell/emacs.d.png?branch=master)](https://travis-ci.org/purcell/emacs.d)
-<a href="https://www.patreon.com/sanityinc"><img alt="Support me" src="https://img.shields.io/badge/Support%20Me-%F0%9F%92%97-ff69b4.svg"></a>
+[![Build Status](https://travis-ci.org/karthikmuralidharan/emacs.d.png?branch=master)](https://travis-ci.org/karthikmuralidharan/emacs.d)
 
 # A reasonable Emacs config
 
@@ -24,6 +23,8 @@ in the approximate order of how much I use them, from most to least:
 * Common Lisp (with Slime)
 * PHP
 * Erlang
+* Typescript
+* Go
 
 In particular, there's a nice config for *autocompletion* with
 [company](https://company-mode.github.io/), and
@@ -109,17 +110,11 @@ You might also want to check out `emacs-starter-kit` and `prelude`.
 If you hit any problems, please first ensure that you are using the latest version
 of this code, and that you have updated your packages to the most recent available
 versions (see "Updates" above). If you still experience problems, go ahead and
-[file an issue on the github project](https://github.com/purcell/emacs.d).
-
--Steve Purcell
-
+[file an issue on the github project](https://github.com/purcell/emacs.d) first unless 
+it's a filechange made by me.
 <hr>
 
 
-[💝 Support this project and my other Open Source work](https://www.patreon.com/sanityinc)
+[💼 LinkedIn profile](https://linkedin.com/in/karthikmuralidharan)
 
-[💼 LinkedIn profile](https://uk.linkedin.com/in/stevepurcell)
-
-[✍ sanityinc.com](http://www.sanityinc.com/)
-
-[🐦 @sanityinc](https://twitter.com/sanityinc)
+[🐦 @_karthikm](https://twitter.com/_karthikm)
