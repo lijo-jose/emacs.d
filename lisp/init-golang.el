@@ -35,6 +35,7 @@
   (maybe-require-package 'go-projectile)
   (maybe-require-package 'auto-complete)
   (maybe-require-package 'go-autocomplete)
+  (maybe-require-package 'go-tag)
   (require 'go-projectile)
   (require 'go-autocomplete)
 
