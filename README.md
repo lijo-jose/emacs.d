@@ -110,9 +110,14 @@ You might also want to check out `emacs-starter-kit` and `prelude`.
 If you hit any problems, please first ensure that you are using the latest version
 of this code, and that you have updated your packages to the most recent available
 versions (see "Updates" above). If you still experience problems, go ahead and
-[file an issue on the github project](https://github.com/purcell/emacs.d) first unless 
-it's a filechange made by me.
+[file an issue on the parent github project](https://github.com/purcell/emacs.d) first unless 
+it's a file change made by me.
 <hr>
+
+## Attribution
+
+A huge thanks to [Steve Purcell](https://github.com/purcell) for his contributions to
+https://github.com/purcell/emacs.d from which this is derived and extended from.  
 
 
 [💼 LinkedIn profile](https://linkedin.com/in/karthikmuralidharan)
